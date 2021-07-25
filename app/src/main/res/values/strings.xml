@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="nama">Nama</string>
+    <string name="next">Next</string>
+    <string name="nama_label">Nama :</string>
+    <string name="pilih_guest">Pilih Guest</string>
+    <string name="nama_event">Nama Event</string>
+    <string name="tanggal_item">Tanggal Item</string>
+    <string name="pilih_event">Pilih Event</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+</resources>
