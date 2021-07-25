@@ -1,6 +1,5 @@
 package com.juanarton.test.model
 
-import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.juanarton.test.data.DataDummy

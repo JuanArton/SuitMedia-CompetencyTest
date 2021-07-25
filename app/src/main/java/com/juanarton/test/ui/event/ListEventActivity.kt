@@ -3,12 +3,10 @@ package com.juanarton.test.ui.event
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.juanarton.test.adapter.ListEventAdapter
-import com.juanarton.test.data.DataDummy
 import com.juanarton.test.data.EventDataClass
 import com.juanarton.test.databinding.ActivityListEventBinding
 import com.juanarton.test.model.ViewModelFactory

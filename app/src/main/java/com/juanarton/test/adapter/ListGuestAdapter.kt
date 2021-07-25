@@ -6,9 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.juanarton.test.R
-import com.juanarton.test.data.EventDataClass
 import com.juanarton.test.data.GuestDataClass
-import com.juanarton.test.databinding.ItemEventBinding
 import com.juanarton.test.databinding.ItemGuestBinding
 
 class ListGuestAdapter (private val listData: List<GuestDataClass>) :

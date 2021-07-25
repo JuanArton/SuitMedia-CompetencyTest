@@ -1,6 +1,5 @@
 package com.juanarton.test.model
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.juanarton.test.ui.event.ListEventViewModel

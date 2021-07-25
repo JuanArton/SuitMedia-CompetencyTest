@@ -2,7 +2,6 @@ package com.juanarton.test.model.remote
 
 import com.juanarton.test.API.API
 import com.juanarton.test.data.GuestDataClass
-import retrofit2.Response
 import retrofit2.await
 
 class RemoteDataSource {
