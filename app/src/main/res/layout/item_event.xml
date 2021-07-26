@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
@@ -16,13 +15,15 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/layout_meta">
+
         <ImageView
             android:id="@+id/item_event_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_baseline_image_24"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/event_image">
         </ImageView>
 
         <TextView
@@ -32,8 +33,8 @@
             android:text="@string/nama_event"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toEndOf="@+id/item_event_image"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/item_event_image"
             app:layout_constraintTop_toTopOf="parent">
         </TextView>
 
@@ -44,8 +45,8 @@
             android:layout_marginTop="10dp"
             android:text="@string/tanggal_item"
             android:textSize="12sp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toEndOf="@+id/item_event_image"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/item_event_image"
             app:layout_constraintTop_toBottomOf="@+id/item_nama">
         </TextView>
     </androidx.constraintlayout.widget.ConstraintLayout>

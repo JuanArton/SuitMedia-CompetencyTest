@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/border.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/drawable/line.xml" value="0.35555555555555557" />
+        <entry key="app/src/main/res/layout/actionbar.xml" value="0.34427083333333336" />
         <entry key="app/src/main/res/layout/activity_guest.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_guest_list.xml" value="0.35833333333333334" />
-        <entry key="app/src/main/res/layout/activity_list_event.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_list_event.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_list_guest.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/item_event.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_guest.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/menu/list_menu.xml" value="0.35833333333333334" />
       </map>
     </option>
   </component>

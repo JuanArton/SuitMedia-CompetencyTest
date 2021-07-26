@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
@@ -38,13 +39,47 @@ class ListGuestActivity : AppCompatActivity() {
         binding.rvGuest.adapter = adapter
         adapter.setOnItemClickCallback(object : ListGuestAdapter.OnItemClickCallback{
             override fun onItemClicked(data: GuestDataClass) {
+                val month = data.birthdate.split("-")
+                showPrimeDialog(
+                    primeNumberCheck(month[1].toInt()),
+                    data.nama,
+                    data.birthdate
+                )
+            }
+        })
+    }
+
+    fun primeNumberCheck(month: Int): String {
+        if(month == 1){
+            return "Month not prime"
+        }
+        else{
+            for (i in 2..month / 2) {
+                if (month % i == 0) {
+                    return "Month not prime"
+                }
+            }
+        }
+        return "Month is prime"
+    }
+
+    private fun showPrimeDialog(message: String, name: String, birthdate: String){
+        val alertDialogBuilder = AlertDialog.Builder(this)
+            .setMessage(message)
+            .setCancelable(false)
+            .setPositiveButton("Ok") { dialog, which ->
                 val intent = Intent().apply {
-                    putExtra("guestname", data.nama)
-                    putExtra("birthdate", data.birthdate)
+                    putExtra("guestname", name)
+                    putExtra("birthdate", birthdate)
                 }
                 setResult(Activity.RESULT_OK, intent)
                 finish()
             }
-        })
+            .setNegativeButton("Cancel") { dialog, which ->
+                dialog.cancel()
+            }
+        val dialog = alertDialogBuilder.create()
+        dialog.setTitle("Month Prime Check")
+        dialog.show()
     }
 }

@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.juanarton.test.ui.event.ListEventViewModel
 import com.juanarton.test.ui.guest.ListGuestViewModel
+import com.juanarton.test.ui.maps.MapsViewModel
 
 class ViewModelFactory private constructor(private val dataRepository: DataRepository): ViewModelProvider.NewInstanceFactory(){
     companion object {
@@ -26,6 +27,9 @@ class ViewModelFactory private constructor(private val dataRepository: DataRepos
             }
             modelClass.isAssignableFrom(ListGuestViewModel::class.java) -> {
                 ListGuestViewModel(dataRepository) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel(dataRepository) as T
             }
             else -> throw Throwable("Unknown ViewModel class: " + modelClass.name)
         }
